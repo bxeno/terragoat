@@ -42,7 +42,7 @@ jobs:
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam:992382831869:role/github_snyk_iac_exec
+          role-to-assume: arn:aws:iam::992382831869:role/github_snyk_iac_exec
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{env.AWS_REGION}}
 
